@@ -1,11 +1,12 @@
-import "../globals.css";
+// app/layout.tsx
+import "../styles/globals.css";
 import { QueryProvider } from "@/providers/QueryProvider";
 import { ThemeProvider } from "@/providers/ThemeProvider";
-import SWRegister from "./sw-register";
+import SWRegister from "./(app)/sw-register"; // si este archivo lo tienes en app/(app)/
 
 export const metadata = {
   title: "IFast",
-  description: "Intermittent fasting & supplements tracker"
+  description: "Intermittent fasting & supplements tracker",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
